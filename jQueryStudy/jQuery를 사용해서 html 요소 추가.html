@@ -8,11 +8,18 @@
     <script src="js/jquery-3.1.0.js" type="text/javascript"></script>
     <link href="css/base.css" rel="stylesheet" type="text/css" />
     <link href="css/common.css" rel="stylesheet" type="text/css" />
-    <title>jQuery Study</title>
+    <title>jQuery를 사용해서 html 요소 추가</title>
+    <script>
+        $(function(){
+            $('#books > ul.list').append('<li>Creative jQuery</li>');
+        });
+    </script>
 </head>
 <body>
-    <div id="wrap">
-        <a>jQuery를 사용해서 html 요소 추가</a>
-    </div>
+<div id="books">
+    <ul class="list">
+        <li>Text of jQuery</li>
+    </ul>
+</div>
 </body>
 </html>
