@@ -9,9 +9,24 @@ $(function(){
         'color':'#ebc000'
     });
     */
+    /*
     $('#typo').css({
         fontSize:'70px',
         backgroundColor:'#ae5e9b',
         color:'#abd005'
     });
-})
+    /*
+    $('#typo').on('mouseover', function(){
+        $('#typo').css('color','#ebc000');
+    });
+    */
+    /*
+    $('#typo').on('click', function(){
+        $('#typo').css('color','#ebc000');
+    });
+    */
+    $('#typo').on('click', function(){
+        $('#typo').css('background-color','#ae5e9b');
+        $('header').css('color','#ae5e9b');
+    });
+});
